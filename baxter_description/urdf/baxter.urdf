@@ -5,11 +5,11 @@
 <!-- =================================================================================== -->
 <robot name="baxter">
   <link name="base">
-    <inertial>
+    <!--inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.00094542"/>
       <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
-    </inertial>
+    </inertial-->
   </link>
   <link name="torso">
     <visual>
@@ -78,9 +78,6 @@
       <geometry>
         <mesh filename="package://baxter_description/meshes/base/PEDESTAL.DAE"/>
       </geometry>
-      <material name="darkgray">
-        <color rgba=".2 .2 .2 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.04 0 -0.775"/>
@@ -491,23 +488,22 @@
     </inertial>
   </link>
   <link name="right_hand">
-    <!-- rendered in the mesh
+    <!--
       <visual>
-        <origin xyz="0 0 -0.0232" rpy="0 0 0" />
-        <geometry>
-          <cylinder radius="0.04" length="0.0464" />
-        </geometry>
+	<origin rpy="0 0 0" xyz="0 0 -0.0232"/>
+	<geometry>
+	  <cylinder length="0.0464" radius="0.04"/>
+	</geometry>
         <material name="darkred">
           <color rgba=".5 .1 .1 1" />
         </material>
       </visual>
-      -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
       <geometry>
         <cylinder length="0.0464" radius="0.04"/>
       </geometry>
-    </collision>
+    </collision>-->
     <inertial>
       <origin rpy="0 0 0" xyz="0.01093 0.00042 -0.01532"/>
       <mass value="0.19125"/>
@@ -562,11 +558,13 @@
       <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
     </inertial>
   </link>
+
+  <!-- Base of end effector -->
   <link name="right_gripper">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 -0.02"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <box size="0.025 0.075 0.035"/>
+        <cylinder length="0.1" radius="0.0275"/>
       </geometry>
       <material name="darkred">
         <color rgba=".5 .1 .1 1"/>
@@ -578,6 +576,43 @@
       <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
     </inertial>
   </link>
+
+  <!-- Left finger -->
+  <link name="right_gripper_l_finger">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.015 .065 .015"/>
+      </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.00094542"/>
+      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
+    </inertial>
+  </link>
+
+  <!-- Right finger -->
+  <link name="right_gripper_r_finger">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <box size="0.015 .065 .015"/>
+      </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
+    </visual>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <mass value="0.00094542"/>
+      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
+    </inertial>
+  </link>
+
   <joint name="right_torso_arm_mount" type="fixed">
     <origin rpy="0 0 -0.7854" xyz="0.024645 -0.219645 0.118588"/>
     <parent link="torso"/>
@@ -636,6 +671,7 @@
     <child link="right_upper_forearm_visual"/>
   </joint>
   <joint name="right_w0_to_itb_fixed" type="fixed">
+    <!-- <origin xyz="-0.0565 0 0.1301" rpy="-${PI_DIV_2} 0 ${PI_DIV_2}" /> -->
     <origin rpy="-1.57079632679 0 1.57079632679" xyz="-0.0565 0 0.12"/>
     <axis xyz="0 0 1"/>
     <parent link="right_upper_forearm"/>
@@ -679,11 +715,32 @@
     <parent link="right_hand"/>
     <child link="right_hand_range"/>
   </joint>
+
+  <!-- Base of end effector -->
   <joint name="right_endpoint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.0 0 0.05"/>
+    <origin rpy="1.57 0 0" xyz="-0.005 0.0 0.02"/>
     <parent link="right_hand"/>
     <child link="right_gripper"/>
   </joint>
+
+  <!-- Left finger -->
+  <joint name="right_gripper_l_finger_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.005 0.064 0.035"/>
+    <!--origin rpy="0 0 0" xyz="0.005 0.06 0.035"/-->
+    <axis xyz="0 0 1"/>
+    <parent link="right_gripper"/>
+    <child link="right_gripper_l_finger"/>
+    <limit effort="20.0" lower="-0.045" upper="0.0" velocity="5.0"/>
+    <dynamics damping="0.7" friction="0.0"/>
+  </joint>
+
+  <!-- Right finger -->
+  <joint name="right_gripper_r_finger_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.005 0.06 -0.035"/>
+    <parent link="right_gripper"/>
+    <child link="right_gripper_r_finger"/>
+  </joint>
+
   <link name="left_arm_mount">
     <!-- all defaults -->
     <inertial>
@@ -1037,6 +1094,7 @@
     <child link="left_upper_forearm_visual"/>
   </joint>
   <joint name="left_w0_to_itb_fixed" type="fixed">
+    <!-- <origin xyz="-0.0565 0 0.1301" rpy="-${PI_DIV_2} 0 ${PI_DIV_2}" /> -->
     <origin rpy="-1.57079632679 0 1.57079632679" xyz="-0.0565 0 0.12"/>
     <axis xyz="0 0 1"/>
     <parent link="left_upper_forearm"/>
@@ -1141,6 +1199,16 @@
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="right_w2"/>
     <actuator name="right_motor7">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <!-- Right Gripper -->
+  <transmission name="right_tran8">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_gripper_l_finger_joint"/>
+    <actuator name="right_motor8">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
