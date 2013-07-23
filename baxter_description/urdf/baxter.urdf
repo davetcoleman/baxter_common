@@ -1280,5 +1280,9 @@
     </plugin>
   </gazebo>
 
+  <gazebo reference="torso">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+
 </robot>
 
