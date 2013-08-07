@@ -16,7 +16,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/torso/base_link_collision.STL"/>
+        <mesh filename="package://baxter_description/meshes/torso/base_link_collision.DAE"/>
       </geometry>
     </collision>
     <inertial>
@@ -1296,13 +1296,8 @@
   <!-- ros_control plugin -->
   <gazebo>
     <plugin name="ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/baxter</robotNamespace>
+      <robotNamespace>/robot</robotNamespace>
     </plugin>
-  </gazebo>
-
-  <!-- Gazebo-Specific Link Properties -->
-  <gazebo reference="torso">
-    <selfCollide>true</selfCollide>
   </gazebo>
 
   <!-- Video on Baxter's Screen -->
@@ -1314,6 +1309,56 @@
 	<topicName>/sdk/xdisplay</topicName>
       </plugin>
     </visual>
+  </gazebo>
+
+  <!-- Gazebo-Specific Link Properties -->
+  <gazebo reference="torso">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="head_pan">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_s0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_s1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_e0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_e1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_w0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_w1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="right_w2">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_s0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_s1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_e0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_e1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_w0">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_w1">
+    <cfmDamping>1</cfmDamping>
+  </gazebo>
+  <gazebo reference="left_w2">
+    <cfmDamping>1</cfmDamping>
   </gazebo>
 
 </robot>
