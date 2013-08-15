@@ -6,7 +6,10 @@ Panels:
       Expanded:
         - /RobotModel1
         - /RobotModel1/Links1
-      Splitter Ratio: 0.5
+        - /RobotModel1/Links1/right_gripper1
+        - /RobotModel1/Links1/right_gripper_l_finger1
+        - /RobotModel1/Links1/right_gripper_r_finger1
+      Splitter Ratio: 0.696056
     Tree Height: 712
   - Class: rviz/Selection
     Name: Selection
@@ -53,6 +56,15 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
+        All Links Enabled: false
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         collision_head_link_1:
           Alpha: 1
           Show Axes: false
@@ -63,11 +75,27 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        dummyhead1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         head:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
+        head_camera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_arm_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        left_arm_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         left_gripper:
           Alpha: 1
           Show Axes: false
@@ -83,6 +111,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_hand_camera_axis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         left_hand_range:
           Alpha: 1
           Show Axes: false
@@ -103,6 +135,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_torso_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         left_upper_elbow:
           Alpha: 1
           Show Axes: false
@@ -138,6 +174,14 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        right_arm_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        right_arm_mount:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         right_gripper:
           Alpha: 1
           Show Axes: false
@@ -145,7 +189,7 @@ Visualization Manager:
           Value: true
         right_gripper_l_finger:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
           Value: true
         right_gripper_r_finger:
@@ -153,11 +197,19 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        right_hand:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         right_hand_camera:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
+        right_hand_camera_axis:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         right_hand_range:
           Alpha: 1
           Show Axes: false
@@ -178,6 +230,10 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        right_torso_itb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         right_upper_elbow:
           Alpha: 1
           Show Axes: false
@@ -213,6 +269,11 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        screen_visual:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         sonar_ring:
           Alpha: 1
           Show Axes: false
@@ -232,7 +293,8 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: /base
+    Fixed Frame: base
+    Frame Rate: 30
   Name: root
   Tools:
     - Class: rviz/Interact
@@ -252,17 +314,17 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.61633
+      Distance: 0.541798
       Focal Point:
-        X: 0.592453
-        Y: -0.0191349
-        Z: 0.467259
+        X: 0.824417
+        Y: -1.02545
+        Z: 0.328229
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.759801
+      Pitch: 0.564798
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.94857
+      Yaw: 6.02362
     Saved: ~
 Window Geometry:
   Displays:

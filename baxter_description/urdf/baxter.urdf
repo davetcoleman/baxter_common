@@ -28,16 +28,16 @@
   <link name="left_torso_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-  	   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -47,16 +47,16 @@
   <link name="right_torso_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-  	   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -438,16 +438,16 @@
   <link name="right_arm_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-  	   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -500,21 +500,21 @@
   </link>
   <link name="right_hand">
     <!--
-      <visual>
+	<visual>
 	<origin rpy="0 0 0" xyz="0 0 -0.0232"/>
 	<geometry>
-	  <cylinder length="0.0464" radius="0.04"/>
+	<cylinder length="0.0464" radius="0.04"/>
 	</geometry>
         <material name="darkred">
-          <color rgba=".5 .1 .1 1" />
+	<color rgba=".5 .1 .1 1" />
         </material>
-      </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
-      <geometry>
+	</visual>
+	<collision>
+	<origin rpy="0 0 0" xyz="0 0 -0.0232"/>
+	<geometry>
         <cylinder length="0.0464" radius="0.04"/>
-      </geometry>
-    </collision>-->
+	</geometry>
+	</collision>-->
     <inertial>
       <origin rpy="0 0 0" xyz="0.01093 0.00042 -0.01532"/>
       <mass value="0.19125"/>
@@ -541,12 +541,12 @@
     <!--visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <cylinder radius="0.02" length="0.01" />
+	<cylinder radius="0.02" length="0.01" />
         </geometry>
         <material name="blue">
-          <color rgba="0 0 1 0.8" />
+	<color rgba="0 0 1 0.8" />
         </material>
-      </visual-->
+	</visual-->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.00094542"/>
@@ -573,14 +573,20 @@
   <!-- Base of end effector -->
   <link name="right_gripper">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 3.14 0" xyz="0.007 0.005 0"/>
+      <geometry>
+        <mesh filename="package://baxter_description/meshes/electric_gripper/electricgripper.dae"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.007 0.007 0"/>
       <geometry>
         <cylinder length="0.1" radius="0.0275"/>
       </geometry>
       <material name="darkred">
         <color rgba=".5 .1 .1 1"/>
       </material>
-    </visual>
+    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -591,14 +597,25 @@
   <!-- Left finger -->
   <link name="right_gripper_l_finger">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.066 -0.0135"/>
       <geometry>
-        <box size="0.015 .065 .015"/>
+        <!--mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00017816.dae" /--> <!--PADDING-->
+        <!--mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030515.dae" /--> <!--LONG LEFT -->
+        <!--mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030516.dae" /--> <!-- wide bracket -->
+        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030517.dae" /> <!-- Short left -->
+        <!--mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /--> <!--LONG RIGHT /-->
+        <!--mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030535.dae" /--> <!-- weird bracket -->
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.007 0.0035 0.001"/>
+      <geometry>
+        <box size="0.015 .07 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
       </material>
-    </visual>
+    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -609,14 +626,20 @@
   <!-- Right finger -->
   <link name="right_gripper_r_finger">
     <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 1.57079632679 0" xyz="0.007 -0.066 0.0135"/>
       <geometry>
-        <box size="0.015 .065 .015"/>
+        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030517.dae" /> <!-- Short left -->
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0.007 0.0035 -0.001"/>
+      <geometry>
+        <box size="0.015 .07 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
       </material>
-    </visual>
+    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -736,24 +759,26 @@
 
   <!-- Left finger -->
   <joint name="right_gripper_l_finger_joint" type="prismatic">
-    <origin rpy="0 0 0" xyz="0.005 0.064 0.035"/>
-    <!--origin rpy="0 0 0" xyz="0.005 0.06 0.035"/-->
+    <origin rpy="0 0 0" xyz="0.0 0.06 0.035"/>
     <axis xyz="0 0 1"/>
     <parent link="right_gripper"/>
     <child link="right_gripper_l_finger"/>
-    <limit effort="20.0" lower="-0.045" upper="0.0" velocity="5.0"/>
+    <limit effort="20.0" lower="-0.0125" upper="0.011" velocity="5.0"/>
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
 
   <!-- Right finger -->
-  <joint name="right_gripper_r_finger_joint" type="fixed">
-    <origin rpy="0 0 0" xyz="0.005 0.06 -0.035"/>
+  <joint name="right_gripper_r_finger_joint" type="prismatic">
+    <origin rpy="0 0 0" xyz="0.0 0.06 -0.035"/>
+    <axis xyz="0 0 1"/>
     <parent link="right_gripper"/>
     <child link="right_gripper_r_finger"/>
+    <limit effort="20.0" lower="-0.0125" upper="0.011" velocity="5.0"/>
+    <dynamics damping="0.7" friction="0.0"/>
+    <mimic joint="right_gripper_l_finger_joint" offset="0" multiplier="-1" />
   </joint>
 
   <link name="left_arm_mount">
-    <!-- all defaults -->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.00094542"/>
@@ -899,16 +924,16 @@
   <link name="left_arm_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-  	   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
@@ -961,16 +986,16 @@
   </link>
   <link name="left_hand">
     <!-- rendered in the mesh
-      <visual>
-        <origin xyz="0 0 -0.0232" rpy="0 0 0" />
-        <geometry>
-          <cylinder radius="0.04" length="0.0464" />
-        </geometry>
-        <material name="darkred">
-          <color rgba=".5 .1 .1 1" />
-        </material>
-      </visual>
-      -->
+	 <visual>
+	 <origin xyz="0 0 -0.0232" rpy="0 0 0" />
+	 <geometry>
+	 <cylinder radius="0.04" length="0.0464" />
+	 </geometry>
+	 <material name="darkred">
+	 <color rgba=".5 .1 .1 1" />
+	 </material>
+	 </visual>
+    -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
       <geometry>
@@ -1003,12 +1028,12 @@
     <!--visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <cylinder radius="0.02" length="0.01" />
+	<cylinder radius="0.02" length="0.01" />
         </geometry>
         <material name="blue">
-          <color rgba="0 0 1 0.8" />
+	<color rgba="0 0 1 0.8" />
         </material>
-      </visual-->
+	</visual-->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.00094542"/>
