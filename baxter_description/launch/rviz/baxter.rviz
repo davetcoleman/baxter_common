@@ -101,6 +101,16 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
+        left_gripper_l_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
+        left_gripper_r_finger:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: false
         left_hand:
           Alpha: 1
           Show Axes: false
@@ -314,17 +324,17 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.541798
+      Distance: 0.0796301
       Focal Point:
         X: 0.824417
         Y: -1.02545
         Z: 0.328229
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.564798
+      Pitch: -0.0902015
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.02362
+      Yaw: 0.595434
     Saved: ~
 Window Geometry:
   Displays:
@@ -343,4 +353,4 @@ Window Geometry:
     collapsed: false
   Width: 1672
   X: 0
-  Y: 289
+  Y: 33
