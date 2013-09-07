@@ -611,9 +611,9 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.0035 0.001"/>
+      <origin rpy="0 0 0" xyz="0.007 0.023 0.001"/>
       <geometry>
-        <box size="0.015 .07 .015"/>
+        <box size="0.015 .1 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
@@ -635,9 +635,9 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.0035 -0.001"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 -0.001"/>
       <geometry>
-        <box size="0.015 .07 .015"/>
+        <box size="0.015 .1 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
@@ -1102,9 +1102,9 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.0035 0.001"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 0.001"/>
       <geometry>
-        <box size="0.015 .07 .015"/>
+        <box size="0.015 .1 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
@@ -1126,9 +1126,9 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.0035 -0.001"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 -0.001"/>
       <geometry>
-        <box size="0.015 .07 .015"/>
+        <box size="0.015 .1 .015"/>
       </geometry>
       <material name="darkgray">
         <color rgba=".2 .2 .2 1"/>
