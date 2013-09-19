@@ -499,22 +499,21 @@
     </inertial>
   </link>
   <link name="right_hand">
-    <!--
-	<visual>
-	<origin rpy="0 0 0" xyz="0 0 -0.0232"/>
-	<geometry>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
+      <geometry>
 	<cylinder length="0.0464" radius="0.04"/>
-	</geometry>
-        <material name="darkred">
+      </geometry>
+      <material name="darkred">
 	<color rgba=".5 .1 .1 1" />
-        </material>
-	</visual>
-	<collision>
-	<origin rpy="0 0 0" xyz="0 0 -0.0232"/>
-	<geometry>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
+      <geometry>
         <cylinder length="0.0464" radius="0.04"/>
-	</geometry>
-	</collision>-->
+      </geometry>
+    </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.01093 0.00042 -0.01532"/>
       <mass value="0.19125"/>
@@ -572,12 +571,12 @@
 
   <!-- Base of end effector -->
   <link name="right_gripper">
-    <visual>
+    <!--visual>
       <origin rpy="0 3.14 0" xyz="0.007 0.005 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/electricgripper.dae"/>
       </geometry>
-    </visual>
+    </visual-->
     <collision>
       <origin rpy="0 0 0" xyz="0.007 0.007 0"/>
       <geometry>
@@ -604,17 +603,20 @@
 
   <!-- Left finger -->
   <link name="right_gripper_l_finger">
-    <visual>
+    <!--visual>
       <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.036 -0.0135"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" />
       </geometry>
-    </visual>
+    </visual-->
     <collision>
-      <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.036 -0.0135"/>
+      <origin rpy="0 0 0" xyz="0.007 0.023 0.001"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <box size="0.015 .1 .015"/>
       </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
@@ -625,17 +627,20 @@
 
   <!-- Right finger -->
   <link name="right_gripper_r_finger">
-    <visual>
+    <!--visual>
       <origin rpy="0 1.57079632679 0" xyz="0.007 -0.036 0.0135"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> 
       </geometry>
-    </visual>
+    </visual-->
     <collision>
-      <origin rpy="0 1.57079632679 0" xyz="0.007 -0.036 0.0135"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 -0.001"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <box size="0.015 .1 .015"/>
       </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
@@ -1096,10 +1101,13 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.036 -0.0135"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 0.001"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <box size="0.015 .1 .015"/>
       </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
@@ -1117,10 +1125,13 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 1.57079632679 0" xyz="0.007 -0.036 0.0135"/>
+      <origin rpy="0 0 0" xyz="0.007 0.024 -0.001"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.dae" /> <!-- Long left finger-->
+        <box size="0.015 .1 .015"/>
       </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
