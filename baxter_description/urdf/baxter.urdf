@@ -71,11 +71,23 @@
       </geometry>
     </visual>
     <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.4"/>
+      <geometry>
+        <cylinder length="0.6" radius="0.15"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.78"/>
+      <geometry>
+        <box size="0.8 0.8 0.25"/>
+      </geometry>
+    </collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/base/pedestal_link_collision.DAE"/>
       </geometry>
-    </collision>
+    </collision-->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="60.86397744"/>
@@ -1330,6 +1342,15 @@
     </actuator>
   </transmission>
 
+  <transmission name="right_tran9">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_gripper_r_finger_joint"/>
+    <actuator name="right_motor9">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
   <!-- Left Arm -->
   <transmission name="left_tran1">
     <type>transmission_interface/SimpleTransmission</type>
@@ -1393,6 +1414,15 @@
     <type>transmission_interface/SimpleTransmission</type>
     <joint name="left_gripper_l_finger_joint"/>
     <actuator name="left_motor8">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="left_tran9">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_gripper_r_finger_joint"/>
+    <actuator name="left_motor9">
       <hardwareInterface>EffortJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
