@@ -293,7 +293,7 @@
     <child link="screen_visual"/>
   </joint>
   <joint name="head_camera" type="fixed">
-    <origin rpy="1.9198622 0.0 1.57079632679" xyz="0.12839 0.0 0.06368"/>
+    <origin rpy="0.0 0.61073254 0.0" xyz="0.12839 0.0 0.06368"/>
     <parent link="head"/>
     <child link="head_camera"/>
   </joint>
@@ -744,7 +744,7 @@
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
   <joint name="right_hand_camera" type="fixed">
-    <origin rpy="0 0 -1.57079633" xyz="0.03825 0.012 0.015355"/>
+    <origin rpy="0 -1.57079633 0" xyz="0.03825 0.012 0.015355"/>
     <parent link="right_hand"/>
     <child link="right_hand_camera"/>
   </joint>
@@ -1229,7 +1229,7 @@
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
   <joint name="left_hand_camera" type="fixed">
-    <origin rpy="0 0 -1.57079633" xyz="0.03825 0.012 0.015355"/>
+    <origin rpy="0 -1.57079633 0" xyz="0.03825 0.012 0.015355"/>
     <parent link="left_hand"/>
     <child link="left_hand_camera"/>
   </joint>
@@ -1505,6 +1505,101 @@
   <gazebo reference="left_w2">
     <cfmDamping>1</cfmDamping>
   </gazebo>
-
+  <!-- head camera -->	
+  <gazebo reference="head_camera">
+    <sensor type="camera" name="head_camera">
+      <update_rate>30.0</update_rate>
+      <camera name="head_camera">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>/cameras/head_camera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>head_camera</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>  
+  <!-- left hand camera -->	
+  <gazebo reference="left_hand_camera">
+    <sensor type="camera" name="left_hand_camera">
+      <update_rate>30.0</update_rate>
+      <camera name="left_hand_camera">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>/cameras/left_hand_camera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>left_hand_camera</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+  <!-- right hand camera -->	
+  <gazebo reference="right_hand_camera">
+    <sensor type="camera" name="right_hand_camera">
+      <update_rate>30.0</update_rate>
+      <camera name="right_hand_camera">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>/cameras/right_hand_camera</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>right_hand_camera</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
 </robot>
 
