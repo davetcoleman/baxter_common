@@ -16,7 +16,6 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <!-- <box size="0.2 0.35 0.4" /> -->
         <mesh filename="package://baxter_description/meshes/torso/base_link.DAE"/>
       </geometry>
       <material name="darkgray">
@@ -38,16 +37,16 @@
   <link name="left_torso_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.0001"/>
@@ -57,16 +56,16 @@
   <link name="right_torso_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-t   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.0001"/>
@@ -79,9 +78,6 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
         <mesh filename="package://baxter_description/meshes/base/PEDESTAL.DAE"/>
       </geometry>
-      <material name="darkgray">
-        <color rgba=".2 .2 .2 1"/>
-      </material>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.04 0 -0.775"/>
@@ -431,16 +427,16 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
   <link name="right_arm_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-t   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.0001"/>
@@ -493,16 +489,16 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
   </link>
   <link name="right_hand">
     <!-- rendered in the mesh
-      <visual>
-        <origin xyz="0 0 -0.0232" rpy="0 0 0" />
-        <geometry>
-          <cylinder radius="0.04" length="0.0464" />
-        </geometry>
-        <material name="darkred">
-          <color rgba=".5 .1 .1 1" />
-        </material>
-      </visual>
-      -->
+	 <visual>
+	 <origin xyz="0 0 -0.0232" rpy="0 0 0" />
+	 <geometry>
+	 <cylinder radius="0.04" length="0.0464" />
+	 </geometry>
+	 <material name="darkred">
+	 <color rgba=".5 .1 .1 1" />
+	 </material>
+	 </visual>
+    -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
       <geometry>
@@ -535,12 +531,12 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
     <!--visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <cylinder radius="0.02" length="0.01" />
+	<cylinder radius="0.02" length="0.01" />
         </geometry>
         <material name="blue">
-          <color rgba="0 0 1 0.8" />
+	<color rgba="0 0 1 0.8" />
         </material>
-      </visual-->
+	</visual-->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.0001"/>
@@ -852,16 +848,16 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
   <link name="left_arm_itb">
     <!-- note: invisible -->
     <!--
-         <visual>
-t   <origin xyz="0 0 0" rpy="0 0 0" />
-           <geometry>
-             <box size=".059 0.118  0.032" />
-           </geometry>
-           <material name="white">
-             <color rgba="1 1 1 1" />
-           </material>
-         </visual>
-         -->
+	<visual>
+	<origin xyz="0 0 0" rpy="0 0 0" />
+	<geometry>
+	<box size=".059 0.118  0.032" />
+	</geometry>
+	<material name="white">
+	<color rgba="1 1 1 1" />
+	</material>
+	</visual>
+    -->
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.0001"/>
@@ -914,16 +910,16 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
   </link>
   <link name="left_hand">
     <!-- rendered in the mesh
-      <visual>
-        <origin xyz="0 0 -0.0232" rpy="0 0 0" />
-        <geometry>
-          <cylinder radius="0.04" length="0.0464" />
-        </geometry>
-        <material name="darkred">
-          <color rgba=".5 .1 .1 1" />
-        </material>
-      </visual>
-      -->
+	 <visual>
+	 <origin xyz="0 0 -0.0232" rpy="0 0 0" />
+	 <geometry>
+	 <cylinder radius="0.04" length="0.0464" />
+	 </geometry>
+	 <material name="darkred">
+	 <color rgba=".5 .1 .1 1" />
+	 </material>
+	 </visual>
+    -->
     <collision>
       <origin rpy="0 0 0" xyz="0 0 -0.0232"/>
       <geometry>
@@ -956,12 +952,12 @@ t   <origin xyz="0 0 0" rpy="0 0 0" />
     <!--visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <cylinder radius="0.02" length="0.01" />
+	<cylinder radius="0.02" length="0.01" />
         </geometry>
         <material name="blue">
-          <color rgba="0 0 1 0.8" />
+	<color rgba="0 0 1 0.8" />
         </material>
-      </visual-->
+	</visual-->
     <inertial>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <mass value="0.0001"/>
