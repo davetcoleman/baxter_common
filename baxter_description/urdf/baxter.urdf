@@ -23,9 +23,9 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="-0.065 0 0.0"/>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.7" radius="0.27"/>
+        <mesh filename="package://baxter_description/meshes/torso/base_link_simple.DAE"/>
       </geometry>
     </collision>
     <inertial>
@@ -80,9 +80,15 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="-0.04 0 -0.775"/>
+      <origin rpy="0 0 0" xyz="0 0 -0.36"/>
       <geometry>
-        <box size="0.92 0.83 0.3"/>
+        <cylinder length="0.6" radius="0.15"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="-0.04 0 -0.78"/>
+      <geometry>
+        <box size="0.895 0.83 0.20"/>
       </geometry>
     </collision>
     <inertial>
@@ -456,8 +462,17 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.10" radius="0.06"/>
+        <cylinder length="0.155" radius="0.06"/>
       </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 1.57 0" xyz="0.1 0 0"/>
+      <geometry>
+        <cylinder length="0.14" radius="0.068"/>
+      </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.06041 0.00697 0.006"/>
@@ -476,9 +491,9 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.01 0 0.085"/>
       <geometry>
-        <cylinder length="0.165" radius="0.06"/>
+        <cylinder length="0.065" radius="0.05"/>
       </geometry>
     </collision>
     <inertial>
@@ -585,7 +600,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.007 0"/>
+      <origin rpy="1.57 0 3.14" xyz="0.0 0 -0.019"/>
       <geometry>
         <cylinder length="0.1" radius="0.0275"/>
       </geometry>
@@ -609,7 +624,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.036 -0.0135"/>
+      <origin rpy="1.57 0 1.57" xyz="0.0 -0.031 -0.034"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -630,7 +645,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 1.57079632679 0" xyz="0.007 -0.036 0.0135"/>
+      <origin rpy="1.57 0 -1.57" xyz="0.0 -0.08 -0.034"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -651,7 +666,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 -1.57079632679 0" xyz="0.007 -0.036 -0.0135"/>
+      <origin rpy="1.57 0 1.57" xyz="0.0 -0.031 -0.034"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -672,7 +687,7 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 1.57079632679 0" xyz="0.007 -0.036 0.0135"/>
+      <origin rpy="1.57 0 -1.57" xyz="0.0 -0.08 -0.034"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/00030518.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -1013,8 +1028,17 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <cylinder length="0.10" radius="0.06"/>
+        <cylinder length="0.155" radius="0.06"/>
       </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 1.57 0" xyz="0.1 0 0"/>
+      <geometry>
+        <cylinder length="0.14" radius="0.068"/>
+      </geometry>
+      <material name="darkgray">
+        <color rgba=".2 .2 .2 1"/>
+      </material>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.06041 0.00697 0.006"/>
@@ -1033,9 +1057,9 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <origin rpy="0 0 0" xyz="0.01 0 0.085"/>
       <geometry>
-        <cylinder length="0.165" radius="0.06"/>
+        <cylinder length="0.065" radius="0.05"/>
       </geometry>
     </collision>
     <inertial>
@@ -1132,22 +1156,6 @@
       <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
     </inertial>
   </link>
-  <!--link name="left_gripper">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 0 0"/>
-      <geometry>
-        <box size="0.01 0.01 0.01"/>
-      </geometry>
-      <material name="black">
-        <color rgba="0 0 0 1"/>
-      </material>
-    </visual>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.0001"/>
-      <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08"/>
-    </inertial>
-  </link-->
 
   <!-- Base of left end effector -->
   <link name="left_gripper">
@@ -1158,7 +1166,8 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0.007 0.007 0"/>
+      <origin rpy="1.57 0 3.14" xyz="0.0 0 -0.019"/>
+      <!--origin rpy="0 0 0" xyz="0.007 0.007 0"/-->
       <geometry>
         <cylinder length="0.1" radius="0.0275"/>
       </geometry>

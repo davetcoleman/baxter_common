@@ -4,7 +4,6 @@ Panels:
     Name: Displays
     Property Tree Widget:
       Expanded:
-        - /Global Options1
         - /TF1/Frames1
         - /RobotModel1
         - /RobotModel1/Links1
@@ -65,7 +64,7 @@ Visualization Manager:
       Value: false
     - Alpha: 1
       Class: rviz/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Enabled: true
       Links:
         All Links Enabled: true
@@ -255,7 +254,7 @@ Visualization Manager:
           Value: true
         right_lower_forearm:
           Alpha: 1
-          Show Axes: false
+          Show Axes: true
           Show Trail: false
           Value: true
         right_lower_shoulder:
@@ -317,7 +316,7 @@ Visualization Manager:
       TF Prefix: ""
       Update Interval: 0
       Value: true
-      Visual Enabled: true
+      Visual Enabled: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -337,22 +336,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.93665
+      Distance: 2.17939
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.168529
-        Y: 0.429618
-        Z: 0.0216579
+        X: 0.150104
+        Y: 0.0660918
+        Z: -0.145172
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.3202
+      Pitch: 0.189797
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 6.2186
+      Yaw: 6.08859
     Saved: ~
 Window Geometry:
   Displays:
