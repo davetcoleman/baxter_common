@@ -219,15 +219,15 @@
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/electric_gripper_base.DAE" scale="1 1 1" />
       </geometry>
+      <material name="darkred">
+        <color rgba=".5 .1 .1 1"/>
+      </material>
     </visual>
     <collision>
       <origin rpy="1.57 0 0" xyz="0.0 0.0 0.025"/>
       <geometry>
         <cylinder length="0.1" radius="0.0275"/>
       </geometry>
-      <material name="darkred">
-        <color rgba=".5 .1 .1 1"/>
-      </material>
     </collision>
   </link>
   <link name="left_hand">
@@ -506,7 +506,7 @@
         <cylinder length="0.6" radius="0.15"/>
       </geometry>
     </collision>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 -0.12"/>
       <geometry>
         <cylinder length="0.11" radius="0.19"/>
@@ -517,7 +517,7 @@
       <geometry>
         <box size="0.8 0.8 0.25"/>
       </geometry>
-    </collision>    
+    </collision-->    
   </link>
   <link name="right_arm_itb">
     <inertial>
@@ -637,15 +637,15 @@
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/electric_gripper_base.DAE" scale="1 1 1" />
       </geometry>
+      <material name="darkred">
+        <color rgba=".5 .1 .1 1"/>
+      </material>
     </visual>
     <collision>
       <origin rpy="1.57 0 0" xyz="0.0 0.0 0.025"/>
       <geometry>
         <cylinder length="0.1" radius="0.0275"/>
       </geometry>
-      <material name="darkred">
-        <color rgba=".5 .1 .1 1"/>
-      </material>
     </collision>
   </link>
   <link name="right_hand">
