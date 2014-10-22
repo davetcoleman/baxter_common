@@ -7,6 +7,7 @@ Panels:
         - /RobotModel1
         - /RobotModel1/Links1
         - /RobotModel1/Links1/left_gripper_base1
+        - /RobotModel1/Links1/right_lower_shoulder1
       Splitter Ratio: 0.732293
     Tree Height: 742
   - Class: rviz/Selection
@@ -318,7 +319,7 @@ Visualization Manager:
       TF Prefix: ""
       Update Interval: 0
       Value: true
-      Visual Enabled: false
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -343,22 +344,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 2.85922
+      Distance: 1.38314
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.26039
-        Y: 0.0634361
-        Z: -0.102031
+        X: 0.28607
+        Y: -0.567559
+        Z: -0.0941316
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 0.725398
+      Pitch: 0.955398
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.145401
+      Yaw: 5.86358
     Saved: ~
 Window Geometry:
   Displays:

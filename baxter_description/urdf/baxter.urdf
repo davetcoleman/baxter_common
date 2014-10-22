@@ -316,7 +316,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.1" />
+        <cylinder radius="0.08" length="0.18" />
       </geometry>
     </collision>
   </link>
@@ -338,7 +338,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.1" />
+        <cylinder radius="0.06" length="0.16"/>
       </geometry>
     </collision>
   </link>
@@ -360,7 +360,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.12" />
+        <cylinder radius="0.09" length="0.25" />
       </geometry>
     </collision>
   </link>
@@ -389,7 +389,7 @@
     <collision>
       <origin xyz="0 0 -0.0535" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.107" />
+        <cylinder radius="0.09" length="0.107" />
       </geometry>
     </collision>
   </link>
@@ -400,9 +400,9 @@
       <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
     </inertial>
     <collision>
-      <origin xyz="-0.01 -0.00 0.15" rpy="0 -0 0" />
+      <origin xyz="0 0 0.1365" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.082" length="0.28" />
+        <cylinder radius="0.09" length="0.3" />
       </geometry>
     </collision>
   </link>
@@ -459,7 +459,7 @@
     <collision>
       <origin xyz="0 0 0.1361" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.2722" />
+        <cylinder radius="0.1" length="0.35" />
       </geometry>
     </collision>
   </link>
@@ -506,6 +506,18 @@
         <cylinder length="0.6" radius="0.15"/>
       </geometry>
     </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.12"/>
+      <geometry>
+        <cylinder length="0.11" radius="0.19"/>
+      </geometry>
+    </collision>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 -0.78"/>
+      <geometry>
+        <box size="0.8 0.8 0.25"/>
+      </geometry>
+    </collision>    
   </link>
   <link name="right_arm_itb">
     <inertial>
@@ -722,7 +734,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.1" />
+        <cylinder radius="0.08" length="0.18" />
       </geometry>
     </collision>
   </link>
@@ -744,7 +756,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.1" />
+        <cylinder radius="0.06" length="0.16"/>
       </geometry>
     </collision>
   </link>
@@ -766,7 +778,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.12" />
+        <cylinder radius="0.09" length="0.25" />
       </geometry>
     </collision>
   </link>
@@ -795,7 +807,7 @@
     <collision>
       <origin xyz="0 0 -0.0535" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.107" />
+        <cylinder radius="0.09" length="0.107" />
       </geometry>
     </collision>
   </link>
@@ -808,7 +820,7 @@
     <collision>
       <origin xyz="0 0 0.1365" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.08" length="0.273" />
+        <cylinder radius="0.09" length="0.3" />
       </geometry>
     </collision>
   </link>
@@ -865,7 +877,7 @@
     <collision>
       <origin xyz="0 0 0.1361" rpy="0 -0 0" />
       <geometry>
-        <cylinder radius="0.07" length="0.2722" />
+        <cylinder radius="0.1" length="0.35" />
       </geometry>
     </collision>
   </link>
