@@ -46,3 +46,7 @@ catkin
 catkin_generated
 devel
 test_results
+
+
+baxter.gv
+baxter.pdf
