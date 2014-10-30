@@ -249,7 +249,7 @@
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
     </inertial>
-    <visual>
+    <!--visual>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
         <box size="0.01 0.01 0.01" />
@@ -257,7 +257,7 @@
       <material name="black">
         <color rgba="0 0 0 1" />
       </material>
-    </visual>
+    </visual-->
   </link>
   <link name="left_hand_camera">
     <inertial>
@@ -667,7 +667,7 @@
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <inertia ixx="1e-08" ixy="0" ixz="0" iyy="1e-08" iyz="0" izz="1e-08" />
     </inertial>
-    <visual>
+    <!--visual>
       <origin xyz="0 0 0" rpy="0 -0 0" />
       <geometry>
         <box size="0.01 0.01 0.01" />
@@ -675,7 +675,7 @@
       <material name="black">
         <color rgba="0 0 0 1" />
       </material>
-    </visual>
+    </visual-->
   </link>
   <link name="right_hand_camera">
     <inertial>
