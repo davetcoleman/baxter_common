@@ -137,33 +137,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.00094542"/>
-      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
-    </inertial>
-  </link>
-
-  <!-- Second Left finger -->
-  <link name="left_gripper_l_second_finger">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </collision>
     <inertial>
@@ -178,36 +158,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
 
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.00094542"/>
-      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
-    </inertial>
-  </link>
-
-  <!-- Second Right finger -->
-  <link name="left_gripper_r_second_finger">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
@@ -559,33 +518,13 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.00094542"/>
-      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
-    </inertial>
-  </link>
-
-  <!-- Second Left finger -->
-  <link name="right_gripper_l_second_finger">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </visual>
-    <collision>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </collision>
     <inertial>
@@ -600,36 +539,15 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 -0.007 0"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
 
-    </collision>
-    <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
-      <mass value="0.00094542"/>
-      <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
-    </inertial>
-  </link>
-
-  <!-- Second Right finger -->
-  <link name="right_gripper_r_second_finger">
-    <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
-    </visual>
-    <collision>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
-      <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger.dae" scale="0.01 0.01 0.01" />
-      </geometry>
     </collision>
     <inertial>
       <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
@@ -1051,7 +969,7 @@
 
   <!-- Left finger -->
   <joint name="left_gripper_l_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 0" xyz="-0.019495 -0.024 0.074"/>
+    <origin rpy="0 -1.5708 0" xyz="0.01833 -0.024 0.074"/>
     <axis xyz="0 0 1"/>
     <parent link="left_gripper"/>
     <child link="left_gripper_l_finger"/>
@@ -1059,20 +977,9 @@
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
 
-  <!-- Second Left finger -->
-  <joint name="left_gripper_l_second_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 0" xyz="0.017165 -0.024 0.074"/>
-    <axis xyz="0 0 1"/>
-    <parent link="left_gripper"/>
-    <child link="left_gripper_l_second_finger"/>
-    <limit effort="20.0" lower="-1.5708" upper="0" velocity="5.0"/> <!-- upper is open -->
-    <dynamics damping="0.7" friction="0.0"/>
-    <mimic joint="left_gripper_l_finger_joint" offset="0" multiplier="1" />
-  </joint>
-
   <!-- Right finger -->
   <joint name="left_gripper_r_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 3.14159" xyz="-0.017165 0.024 0.074"/>
+    <origin rpy="0 -1.5708 3.14159" xyz="-0.01833 0.019 0.074"/>
     <axis xyz="0 0 1"/>
     <parent link="left_gripper"/>
     <child link="left_gripper_r_finger"/>
@@ -1080,19 +987,6 @@
     <dynamics damping="0.7" friction="0.0"/>
     <mimic joint="left_gripper_l_finger_joint" offset="0" multiplier="1" />
   </joint>
-
-  <!-- Second Left finger -->
-  <joint name="left_gripper_r_second_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 3.14159" xyz="0.019495 0.024 0.074"/>
-    <axis xyz="0 0 1"/>
-    <parent link="left_gripper"/>
-    <child link="left_gripper_r_second_finger"/>
-    <limit effort="20.0" lower="0.0" upper="1.5708" velocity="5.0"/> <!-- upper is open -->
-    <dynamics damping="0.7" friction="0.0"/>
-    <mimic joint="left_gripper_l_finger_joint" offset="0" multiplier="1" />
-  </joint>
-
-
 
 
 
@@ -1238,7 +1132,7 @@
 
   <!-- Left finger -->
   <joint name="right_gripper_l_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 0" xyz="-0.019495 -0.024 0.074"/>
+    <origin rpy="0 -1.5708 0" xyz="0.01833 -0.024 0.074"/>
     <axis xyz="0 0 1"/>
     <parent link="right_gripper"/>
     <child link="right_gripper_l_finger"/>
@@ -1246,20 +1140,9 @@
     <dynamics damping="0.7" friction="0.0"/>
   </joint>
 
-  <!-- Second Left finger -->
-  <joint name="right_gripper_l_second_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 0" xyz="0.017165 -0.024 0.074"/>
-    <axis xyz="0 0 1"/>
-    <parent link="right_gripper"/>
-    <child link="right_gripper_l_second_finger"/>
-    <limit effort="20.0" lower="-1.5708" upper="0" velocity="5.0"/> <!-- upper is open -->
-    <dynamics damping="0.7" friction="0.0"/>
-    <mimic joint="right_gripper_l_finger_joint" offset="0" multiplier="1" />
-  </joint>
-
   <!-- Right finger -->
   <joint name="right_gripper_r_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 3.14159" xyz="-0.017165 0.024 0.074"/>
+    <origin rpy="0 -1.5708 3.14159" xyz="-0.01833 0.019 0.074"/>
     <axis xyz="0 0 1"/>
     <parent link="right_gripper"/>
     <child link="right_gripper_r_finger"/>
@@ -1267,19 +1150,6 @@
     <dynamics damping="0.7" friction="0.0"/>
     <mimic joint="right_gripper_l_finger_joint" offset="0" multiplier="1" />
   </joint>
-
-  <!-- Second Left finger -->
-  <joint name="right_gripper_r_second_finger_joint" type="revolute">
-    <origin rpy="0 -1.5708 3.14159" xyz="0.019495 0.024 0.074"/>
-    <axis xyz="0 0 1"/>
-    <parent link="right_gripper"/>
-    <child link="right_gripper_r_second_finger"/>
-    <limit effort="20.0" lower="0.0" upper="1.5708" velocity="5.0"/> <!-- upper is open -->
-    <dynamics damping="0.7" friction="0.0"/>
-    <mimic joint="right_gripper_l_finger_joint" offset="0" multiplier="1" />
-  </joint>
-
-
 
   <joint name="right_gripper_base" type="fixed">
     <origin xyz="0 0 0" rpy="0 -0 0" />
