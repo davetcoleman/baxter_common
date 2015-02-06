@@ -23,7 +23,7 @@
     <collision>
       <origin xyz="-0.07 -0.04 0" rpy="0 -0 0" />
       <geometry>
-        <sphere radius="0.25" />
+        <sphere radius="0.18" />
       </geometry>
     </collision>
   </link>
@@ -45,7 +45,7 @@
     <collision>
       <origin xyz="-0.07 0.04 0" rpy="0 -0 0" />
       <geometry>
-        <sphere radius="0.25" />
+        <sphere radius="0.18" />
       </geometry>
     </collision>
   </link>
@@ -578,10 +578,13 @@
       </geometry>
     </visual>
     <collision>
-      <origin rpy="1.5708 0 1.5708" xyz="-0.05 -0.05 0.03175"/>
+      <origin rpy="0 0 0" xyz="0 0 0.08"/>
       <geometry>
-        <mesh filename="package://baxter_description/meshes/open_hand_gripper/base.dae" scale="0.01 0.01 0.01" />
+        <cylinder radius="0.05" length="0.07" />
       </geometry>
+      <!--geometry>
+        <mesh filename="package://baxter_description/meshes/open_hand_gripper/base.dae" scale="0.01 0.01 0.01" />
+      </geometry-->
     </collision>
   </link>
 
