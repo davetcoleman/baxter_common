@@ -525,19 +525,19 @@
   <!-- Left finger -->
   <link name="right_gripper_l_finger">
     <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
+      <origin rpy="0 0 -1.5780" xyz="0 -0.007 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
+      <origin rpy="0 0 -1.5780" xyz="0 -0.007 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <origin rpy="0 0 -1.5780" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
       <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
     </inertial>
@@ -546,20 +546,20 @@
   <!-- Right finger -->
   <link name="right_gripper_r_finger">
     <visual>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
+      <origin rpy="0 0 -1.5708" xyz="0 -0.007 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
     </visual>
     <collision>
-      <origin rpy="0 0 0" xyz="0 -0.007 0"/>
+      <origin rpy="0 0 -1.5708" xyz="0 -0.007 0"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/open_hand_gripper/finger_double.dae" scale="0.01 0.01 0.01" />
       </geometry>
 
     </collision>
     <inertial>
-      <origin rpy="0 0 0" xyz="0.000000 0.000000 0.000000"/>
+      <origin rpy="0 0 -1.5780" xyz="0.000000 0.000000 0.000000"/>
       <mass value="0.00094542"/>
       <inertia ixx="2e-08" ixy="0" ixz="0" iyy="3e-08" iyz="0" izz="2e-08"/>
     </inertial>
