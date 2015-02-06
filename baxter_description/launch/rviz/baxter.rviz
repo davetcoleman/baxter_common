@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /RobotModel1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/left_gripper_base1
+        - /RobotModel1/Links1/right_gripper_base1
         - /RobotModel1/Links1/right_gripper_l_finger1
         - /RobotModel1/Links1/right_lower_shoulder1
       Splitter Ratio: 0.732293
@@ -53,10 +53,10 @@ Visualization Manager:
       Value: true
     - Alpha: 1
       Class: rviz/RobotModel
-      Collision Enabled: false
+      Collision Enabled: true
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -69,17 +69,17 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         collision_head_link_2:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         display:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         dummyhead1:
           Alpha: 1
           Show Axes: false
@@ -88,7 +88,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         head_camera:
           Alpha: 1
           Show Axes: false
@@ -105,27 +105,27 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_gripper_base:
           Alpha: 1
-          Show Axes: true
+          Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_gripper_l_finger:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_gripper_r_finger:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_hand:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_hand_accelerometer:
           Alpha: 1
           Show Axes: false
@@ -134,7 +134,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_hand_camera_axis:
           Alpha: 1
           Show Axes: false
@@ -143,22 +143,22 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_lower_elbow:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_lower_forearm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_lower_shoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_torso_itb:
           Alpha: 1
           Show Axes: false
@@ -167,37 +167,37 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_upper_elbow_visual:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_upper_forearm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_upper_forearm_visual:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_upper_shoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_wrist:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         pedestal:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_arm_itb:
           Alpha: 1
           Show Axes: false
@@ -210,10 +210,10 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_gripper_base:
           Alpha: 1
-          Show Axes: false
+          Show Axes: true
           Show Trail: false
           Value: true
         right_gripper_l_finger:
@@ -230,7 +230,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_hand_accelerometer:
           Alpha: 1
           Show Axes: false
@@ -239,7 +239,7 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_hand_camera_axis:
           Alpha: 1
           Show Axes: false
@@ -248,22 +248,22 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_lower_elbow:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_lower_forearm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_lower_shoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_torso_itb:
           Alpha: 1
           Show Axes: false
@@ -272,47 +272,47 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_upper_elbow_visual:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_upper_forearm:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_upper_forearm_visual:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_upper_shoulder:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_wrist:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         screen:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         sonar_ring:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         torso:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -343,22 +343,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.590079
+      Distance: 1.14622
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.06
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 1.25435
-        Y: -0.0627524
-        Z: 0.161624
+        X: 1.05714
+        Y: -0.802782
+        Z: 0.121683
       Name: Current View
       Near Clip Distance: 0.01
-      Pitch: 1.4104
+      Pitch: 0.374797
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.02358
+      Yaw: 3.75855
     Saved: ~
 Window Geometry:
   Displays:
