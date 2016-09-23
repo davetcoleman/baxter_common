@@ -2,7 +2,7 @@
 <!-- mcevoy.andy@gmail.com -->
 <!-- incorporates option for using Yale Open Hand Model T v0.5.2 -->
 
-<robot name="baxter" 
+<robot name="baxter"
        xmlns:xacro="http://www.ros.org/wiki/xacro"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
@@ -12,10 +12,10 @@
 
 <!-- Electric Parallel Gripper -->
 <xacro:electric_parallel_gripper arm="left" />
-<!-- xacro:electric_parallel_gripper arm="right" / -->
+<xacro:electric_parallel_gripper arm="right" />
 
 <!-- Yale Open Hand -->
 <!-- xacro:open_hand_gripper arm="left"/ -->
-<xacro:open_hand_gripper arm="right"/>
+<!-- <xacro:open_hand_gripper arm="right"/> -->
 
 </robot>
