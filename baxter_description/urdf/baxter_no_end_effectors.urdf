@@ -477,6 +477,10 @@
       </material>
     </visual>
   </link>
+  <link name="right_gripper_tip">
+  </link>
+  <link name="left_gripper_tip">
+  </link>
 
 <!-- removed right gripper description -->
 

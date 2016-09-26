@@ -7,7 +7,7 @@
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <xacro:include filename="$(find baxter_description)/urdf/baxter_no_end_effectors.urdf"/>
-<xacro:include filename="$(find baxter_description)/urdf/open_hand.urdf.xacro" />
+<!-- <xacro:include filename="$(find baxter_description)/urdf/open_hand.urdf.xacro" /> -->
 <xacro:include filename="$(find baxter_description)/urdf/electric_gripper.urdf.xacro" />
 
 <!-- Electric Parallel Gripper -->
