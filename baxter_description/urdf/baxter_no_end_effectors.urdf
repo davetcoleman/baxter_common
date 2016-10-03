@@ -923,7 +923,9 @@
     <limit effort="50" velocity="1.5" lower="-2.147" upper="1.047" />
   </joint>
   <joint name="left_torso_arm_mount" type="fixed">
-    <origin xyz="0.0252503 0.219489 0.109759" rpy="-0.00479639 0.00185872 0.779972" />
+    <!-- <origin xyz="0.0252503 0.219489 0.109759" rpy="-0.00479639 0.00185872 0.779972" /> -->
+    <!-- <origin xyz="0.023277  0.21986  0.10804"  rpy="-0.00479639 0.00185872 0.779972" /> -->
+    <origin xyz="0.023277  0.21986  0.10804"  rpy="-0.0174986  0.00342261 0.785584" />
     <axis xyz="0 0 0" />
     <parent link="torso" />
     <child link="left_arm_mount" />
