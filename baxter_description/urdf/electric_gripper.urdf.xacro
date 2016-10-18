@@ -86,7 +86,14 @@
   </joint>
 
   <!-- Left finger -->
-  <joint name="${arm}_gripper_l_finger_joint" type="prismatic">
+  <xacro:if value="${arm == 'right'}">
+    <xacro:property name="arm_short" value="r" />
+  </xacro:if>
+  <xacro:if value="${arm == 'left'}">
+    <xacro:property name="arm_short" value="l" />
+  </xacro:if>
+
+  <joint name="${arm_short}_gripper_l_finger_joint" type="prismatic">
     <origin rpy="1.57 0 0" xyz="0.0 -0.04 0.035"/>
     <axis xyz="0 0 1"/>
     <parent link="${arm}_gripper"/>
@@ -103,7 +110,7 @@
     <child link="${arm}_gripper_r_finger"/>
     <limit effort="20.0" lower="-0.0125" upper="0.0095" velocity="5.0"/> <!-- upper is open -->
     <dynamics damping="0.7" friction="0.0"/>
-    <mimic joint="${arm}_gripper_l_finger_joint" offset="0" multiplier="-1" />
+    <mimic joint="${arm_short}_gripper_l_finger_joint" offset="0" multiplier="-1" />
   </joint>
 
   <!-- Tip of end effector -->
