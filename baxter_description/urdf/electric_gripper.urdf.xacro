@@ -8,7 +8,7 @@
   <!-- Left finger -->
   <link name="${arm}_gripper_l_finger">
     <visual>
-      <origin rpy="0 -1.57079632679 0" xyz="0.0 -0.036 -0.0135"/>
+      <origin rpy="0 -1.57079632679 0" xyz="0.0 -0.036 -0.05"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/extended_narrow.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -17,7 +17,7 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="1.57 0 0" xyz="0.00 0.02 0.005" />
+      <origin rpy="1.57 0 0" xyz="0.00 0.02 -0.045" />
       <geometry>
 	<cylinder length="0.115" radius="0.008" />
       </geometry>
@@ -32,7 +32,7 @@
   <!-- Right finger -->
   <link name="${arm}_gripper_r_finger">
     <visual>
-      <origin rpy="0 1.57079632679 0" xyz="0.0 -0.036 0.0135"/>
+      <origin rpy="0 1.57079632679 0" xyz="0.0 -0.036 0.05"/>
       <geometry>
         <mesh filename="package://baxter_description/meshes/electric_gripper/fingers/extended_narrow.DAE" /> <!-- Long left finger-->
       </geometry>
@@ -41,7 +41,7 @@
       </material>
     </visual>
     <collision>
-      <origin rpy="1.57 0 0" xyz="0.00 0.02 -0.005" />
+      <origin rpy="1.57 0 0" xyz="0.00 0.02 0.045" />
       <geometry>
 	<cylinder length="0.115" radius="0.01" />
       </geometry>

@@ -324,7 +324,7 @@ Visualization Manager:
       TF Prefix: ""
       Update Interval: 0
       Value: true
-      Visual Enabled: false
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -349,22 +349,22 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 0.629172683
+      Distance: 1.02845907
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.722970486
-        Y: -0.83835876
-        Z: 0.0736507773
+        X: 0.362367094
+        Y: 0.680591226
+        Z: -0.448233604
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.3454009
+      Pitch: 0.950400591
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.46675682
+      Yaw: 0.678569853
     Saved: ~
 Window Geometry:
   Displays:
